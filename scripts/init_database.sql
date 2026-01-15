@@ -19,19 +19,19 @@
 		BEGIN
 			DROP DATABASE DataWarehouse
 		END
- 
+		GO
 -- Create Database DataWarehouse
 
 	 USE master;
-
+	 GO
 	 CREATE DATABASE DataWarehouse;
-
+	 GO
 	 USE DataWarehouse;
-
+	 GO
 -- Create schema
 
 	 CREATE SCHEMA bronze;
- 
+	 GO
 	 CREATE SCHEMA silver;
- 
+	 GO
 	 CREATE SCHEMA gold;
