@@ -1,15 +1,15 @@
 /*
- ====================================================
-|				      Create dabase and schema                |
- ====================================================
+ ==============================================================================
+ 							Create dabase and schema                
+ ==============================================================================
  Script Purpose:
-	Script check if database exist, depend on result database is droped or create.
-	Additionaly script create 3 type of schema: bronze, silver and gold
-
-
+	First script check if database exist. If exist drop it and create new one.
+	Additionaly script create 3 type of schema: bronze, silver and gold.
+................................................................................
  Warning:
 	Running this script will drop the entire database.
 	All data will be permanently deleted.
+.................................................................................
 */
 
 
