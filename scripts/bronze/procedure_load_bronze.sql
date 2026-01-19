@@ -39,6 +39,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @start_procedure DATETIME, @en
 		PRINT 'Loading CRM Tables';
 		PRINT '--------------------------------------------------------';
 
+-- table: bronze.crm_cust_info
+
 		SET @start_time = GETDATE();
 		PRINT'>>Truncating table: bronze.crm_cust_info';
 		TRUNCATE TABLE bronze.crm_cust_info;
@@ -55,6 +57,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @start_procedure DATETIME, @en
 		PRINT'>> Load Duration: ' + CAST(DATEDIFF(SECOND,@start_time,@end_time) as NVARCHAR)+' sec';
 		PRINT'------------------';
 
+-- table:bronze.crm_prd_info
+
 		SET @start_time = GETDATE();
 		PRINT'>>Truncating table: bronze.crm_prd_info';
 		TRUNCATE TABLE bronze.crm_prd_info;
@@ -70,6 +74,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @start_procedure DATETIME, @en
 		SET @end_time = GETDATE();
 		PRINT'>> Load Duration: ' + CAST(DATEDIFF(SECOND,@start_time,@end_time) as NVARCHAR)+' sec';
 		PRINT'------------------';
+
+-- table:bronze.crm_sales_details
 
 		SET @start_time = GETDATE();
 		PRINT'>>Truncating table: bronze.crm_sales_details';
@@ -91,6 +97,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @start_procedure DATETIME, @en
 		PRINT 'Loading CRM Tables';
 		PRINT '--------------------------------------------------------';
 
+-- table: bronze.erp_cust_az12
+
 		SET @start_time = GETDATE();
 		PRINT'>>Truncating table: bronze.erp_cust_az12';
 		TRUNCATE TABLE bronze.erp_cust_az12;
@@ -106,7 +114,9 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @start_procedure DATETIME, @en
 		SET @end_time = GETDATE();
 		PRINT'>> Load Duration: ' + CAST(DATEDIFF(SECOND,@start_time,@end_time) as NVARCHAR)+' sec';
 		PRINT'------------------';
-		
+
+-- table: bronze.erp_loc_a101	
+
 		SET @start_time = GETDATE();
 		PRINT'>>Truncating table: bronze.erp_loc_a101';
 		TRUNCATE TABLE bronze.erp_loc_a101;
@@ -122,6 +132,8 @@ DECLARE @start_time DATETIME, @end_time DATETIME, @start_procedure DATETIME, @en
 		SET @end_time = GETDATE();
 		PRINT'>> Load Duration: ' + CAST(DATEDIFF(SECOND,@start_time,@end_time) as NVARCHAR)+' sec';
 		PRINT'------------------';
+
+-- table: bronze.erp_loc_a101
 
 		SET @start_time = GETDATE();
 		PRINT'>>Truncating table: bronze.erp_px_cat_g1v2';
