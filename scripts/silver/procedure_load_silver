@@ -1,4 +1,25 @@
+/*
+==============================================================================
+ 							Stored Procedure: Load Bronze Layer           
+ ==============================================================================
+ Script Purpose:
+	This stored procedure loada data into 'silver' schema from csv files.
+  It performs following action:
+    - trancates the silver tables
+    - Inserts transformed and cleaned data from Bronze into Silver tables .
 
+ Parameters:
+  This storen procedure does not accept any parameters or return any values
+
+ Usage example:
+  EXEC silver.load_bronze
+
+................................................................................
+ Warning:
+	Running this script will drop the all silver tables in database.
+	All data will be permanently deleted.
+.................................................................................
+*/
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
